@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.syxflorent.medecinprojet.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/TextView_VoirPatients"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Voir Patients"
+        android:textSize="40dp"
+        android:background="#1b5bc1"
+        android:textAlignment="center"
+        android:layout_margin="30dp"
+        android:paddingVertical="30dp"/>
+    <TextView
+        android:id="@+id/TextView_CreePatients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Créer Patients"
+        android:textSize="40dp"
+        android:background="#84ad1d"
+        android:textAlignment="center"
+        android:layout_margin="30dp"
+        android:paddingVertical="30dp"/>
 
-</android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.LinearLayoutCompat>
