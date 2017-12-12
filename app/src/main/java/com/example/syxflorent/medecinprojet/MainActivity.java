@@ -24,5 +24,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentPatient);
             }
         });
+
+        TextView TextView_CreePatients = (TextView) findViewById(R.id.TextView_CreePatients);
+
+        TextView_CreePatients.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentCree = new Intent(MainActivity.this, CreeActivity.class);
+                startActivity(intentCree);
+            }
+        });
+
     }
 }
