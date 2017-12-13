@@ -31,6 +31,5 @@ public class PatientDetailActivity extends AppCompatActivity {
 
         TextView viewMotif = findViewById(R.id.TextViewMotif);
         viewMotif.setText(unPatient.getMotif());
-
     }
 }
