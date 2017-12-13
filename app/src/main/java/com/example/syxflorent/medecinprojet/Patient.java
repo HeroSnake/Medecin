@@ -11,7 +11,7 @@ import java.util.Date;
  */
 
 public class Patient extends SugarRecord implements Serializable{
-    @Unique
+
     private String _nom;
     private String _prenom;
     private Date _dateNaissance;

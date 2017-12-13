@@ -6,8 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.orm.SugarRecord;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PatientDetailActivity extends AppCompatActivity {
 
@@ -35,15 +39,31 @@ public class PatientDetailActivity extends AppCompatActivity {
         TextView viewMotif = findViewById(R.id.TextViewMotif);
         viewMotif.setText(unPatient.getMotif());
 
-        final Button button = findViewById(R.id.btnSupprimer);
-        button.setOnClickListener(new View.OnClickListener() {
+        final Button buttonDel = findViewById(R.id.btnSupprimer);
+        buttonDel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Patient patient = Patient.findById(Patient.class, 1);
-                SugarRecord.delete(patient);
-                Intent intentPatient = new Intent(PatientDetailActivity.this, PatientsActivity.class);
-                startActivity(intentPatient);
+                Patient p = Patient.first(Patient.class);
+               // p.delete();
+               // unPatient.delete();
+
+                /*Patient lePatient = Patient.findById(Patient.class, unPatient.getId());
+                lePatient.delete();
+*/
+                //Intent intentPatient = new Intent(PatientDetailActivity.this, PatientsActivity.class);
+                //startActivity(intentPatient);
+
+            }
+        });
+        final Button buttonMod = findViewById(R.id.btnModifier);
+        buttonMod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i = new Intent(PatientDetailActivity.this, ModifierActivity.class);
+                startActivity(i);
+
             }
         });
     }
