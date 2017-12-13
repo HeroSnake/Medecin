@@ -75,6 +75,11 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date de naissance:"
+        android:textAlignment="center"/>
 
     <DatePicker
         android:id="@+id/dateNaissance"
@@ -83,7 +88,8 @@
         android:spinnersShown="false"
         android:layout_weight="9"
         android:layout_height="0dp"
-        android:headerBackground="#5a98fc"/>
+        android:headerBackground="#5a98fc"
+        />
 
     <Button
         android:layout_width="match_parent"
