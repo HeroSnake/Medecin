@@ -20,7 +20,7 @@
             android:layout_width="100dp"
             android:textSize="20sp"
             android:layout_height="wrap_content"
-            android:text="Nom: "/>
+            android:text="Nom : "/>
 
         <EditText
             android:id="@+id/nom"
@@ -40,7 +40,7 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Prénom: "
+            android:text="Prénom : "
             android:textSize="20sp"/>
 
         <EditText
@@ -61,7 +61,7 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Chambre: "
+            android:text="Chambre : "
             android:textSize="20sp"/>
 
         <EditText
@@ -83,7 +83,7 @@
             android:layout_width="100dp"
             android:textSize="20sp"
             android:layout_height="wrap_content"
-            android:text="Motif: "/>
+            android:text="Motif : "/>
 
         <EditText
             android:id="@+id/motif"
@@ -101,13 +101,13 @@
 
     <DatePicker
         android:id="@+id/dateNaissance"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:calendarViewShown="true"
         android:spinnersShown="false"
         android:layout_weight="7"
         android:layout_height="0dp"
         android:headerBackground="#5a98fc"
-        />
+        android:layout_gravity="center"/>
 
     <Button
         android:layout_width="match_parent"
