@@ -6,11 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.orm.SugarRecord;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class PatientDetailActivity extends AppCompatActivity {
@@ -44,21 +40,21 @@ public class PatientDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Patient p = Patient.first(Patient.class);
-               // p.delete();
-               // unPatient.delete();
+                List<Patient> lesPatients = Patient.find(Patient.class, "_nom = ?", unPatient.getNom());
+                lesPatients.get(0).delete();
 
-                //Intent intentPatient = new Intent(PatientDetailActivity.this, PatientsActivity.class);
-                //startActivity(intentPatient);
+
+                Intent intentPatient = new Intent(PatientDetailActivity.this, MainActivity.class);
+                startActivity(intentPatient);
             }
         });
         final Button buttonMod = findViewById(R.id.btnModifier);
         buttonMod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Patient patientS = Patient.
-                //Intent i = new Intent(PatientDetailActivity.this, ModifierActivity.class);
-                //startActivity(i);
+
+                Intent i = new Intent(PatientDetailActivity.this, ModifierActivity.class);
+                startActivity(i);
             }
         });
     }

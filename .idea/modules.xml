@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Medecin.iml" filepath="$PROJECT_DIR$/Medecin.iml" />
+      <module fileurl="file://C:\Users\syx.florent\AndroidStudioProjects\MedecinProjet\Medecin.iml" filepath="C:\Users\syx.florent\AndroidStudioProjects\MedecinProjet\Medecin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MedecinProjet.iml" filepath="$PROJECT_DIR$/MedecinProjet.iml" />
       <module fileurl="file://F:\Cours\II\PPE-3 Tissot\ANDROID\android\Medecin\MedecinProjet.iml" filepath="F:\Cours\II\PPE-3 Tissot\ANDROID\android\Medecin\MedecinProjet.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

@@ -7,68 +7,6 @@
     android:orientation="vertical"
     android:padding="10dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="5dp"
-        android:paddingLeft="5dp"
-        android:background="#eaedf2">
-
-        <TextView
-            android:layout_width="100dp"
-            android:textSize="20sp"
-            android:layout_height="wrap_content"
-            android:text="Nom : "/>
-
-        <EditText
-            android:id="@+id/nom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="5dp"
-        android:paddingLeft="5dp"
-        android:background="#eaedf2">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Prénom : "
-            android:textSize="20sp"/>
-
-        <EditText
-            android:id="@+id/prenom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="5dp"
-        android:paddingLeft="5dp"
-        android:background="#eaedf2">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Chambre : "
-            android:textSize="20sp"/>
-
-        <EditText
-            android:id="@+id/chambre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -85,28 +23,13 @@
             android:text="Motif : "/>
 
         <EditText
-            android:id="@+id/motif"
+            android:id="@+id/editMotif"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Date de naissance:"
-        android:textAlignment="center"
-        android:textSize="20sp"/>
 
-    <DatePicker
-        android:id="@+id/dateNaissance"
-        android:layout_width="wrap_content"
-        android:calendarViewShown="true"
-        android:spinnersShown="false"
-        android:layout_weight="7"
-        android:layout_height="0dp"
-        android:headerBackground="#5a98fc"
-        android:layout_gravity="center"/>
 
     <Button
         android:layout_width="match_parent"
