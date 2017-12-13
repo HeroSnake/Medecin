@@ -13,13 +13,13 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:text="Nom: "/>
 
         <EditText
             android:id="@+id/nom"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
@@ -30,13 +30,13 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:text="Prénom: "/>
 
         <EditText
             android:id="@+id/prenom"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
@@ -47,13 +47,13 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:text="Chambre: "/>
 
         <EditText
             android:id="@+id/chambre"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
@@ -64,24 +64,17 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:text="Motif: "/>
 
         <EditText
             android:id="@+id/motif"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Inscrire"
-        android:id="@+id/btnInscrire">
-
-    </Button>
 
     <DatePicker
         android:id="@+id/dateNaissance"
@@ -91,6 +84,14 @@
         android:layout_weight="9"
         android:layout_height="0dp"
         android:headerBackground="#5a98fc"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscrire"
+        android:id="@+id/btnInscrire">
+
+    </Button>
 
 
 
