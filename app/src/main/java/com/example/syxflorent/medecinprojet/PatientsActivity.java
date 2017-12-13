@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 
 public class PatientsActivity extends AppCompatActivity {
 
@@ -19,10 +20,11 @@ public class PatientsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_patients);
 
         ArrayList<Patient> lesPatients = new ArrayList<Patient>();
-        lesPatients.add(new Patient("Dupont", "Gilles", new Date(1997,5,23), "C01", "Maladie"));
-        lesPatients.add(new Patient("Macron", "Maxime", new Date(1965,6,1), "B21", "Président"));
-        lesPatients.add(new Patient("Satan", "Marcella", new Date(1950,8,5), "A12", "Vieux"));
-
+        Iterator<Patient> listePatients = Patient.findAll(Patient.class);
+        while (listePatients.hasNext()) {
+            Patient monPatient = listePatients.next();
+            lesPatients.add(monPatient);
+        }
 
         PatientAdapter adapterPatient = new PatientAdapter(this, lesPatients);
         ListView listViewPatients = findViewById(R.id.listView_patients);
