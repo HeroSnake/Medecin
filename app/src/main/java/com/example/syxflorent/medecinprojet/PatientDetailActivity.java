@@ -48,22 +48,17 @@ public class PatientDetailActivity extends AppCompatActivity {
                // p.delete();
                // unPatient.delete();
 
-                /*Patient lePatient = Patient.findById(Patient.class, unPatient.getId());
-                lePatient.delete();
-*/
                 //Intent intentPatient = new Intent(PatientDetailActivity.this, PatientsActivity.class);
                 //startActivity(intentPatient);
-
             }
         });
         final Button buttonMod = findViewById(R.id.btnModifier);
         buttonMod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent i = new Intent(PatientDetailActivity.this, ModifierActivity.class);
-                startActivity(i);
-
+                //Patient patientS = Patient.
+                //Intent i = new Intent(PatientDetailActivity.this, ModifierActivity.class);
+                //startActivity(i);
             }
         });
     }
