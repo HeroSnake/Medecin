@@ -1,5 +1,6 @@
 package com.example.syxflorent.medecinprojet;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,6 +41,8 @@ public class CreeActivity extends AppCompatActivity {
                 int annee =  laDateNaiss.getYear();
                 Patient nouveauPatient = new Patient(nom, prenom, new Date(annee, mois, jour), chambre, motif);
                 nouveauPatient.save();
+                Intent intentPatient = new Intent(CreeActivity.this, CreeActivity.class);
+                startActivity(intentPatient);
             }
         });
     }

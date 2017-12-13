@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView TextView_VoirPatients = (TextView) findViewById(R.id.TextView_VoirPatients);
+        TextView TextView_VoirPatients = findViewById(R.id.TextView_VoirPatients);
 
             TextView_VoirPatients.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView TextView_CreePatients = (TextView) findViewById(R.id.TextView_CreePatients);
+        TextView TextView_CreePatients = findViewById(R.id.TextView_CreePatients);
 
         TextView_CreePatients.setOnClickListener(new View.OnClickListener(){
             @Override
