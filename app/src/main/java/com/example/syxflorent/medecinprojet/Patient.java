@@ -37,5 +37,17 @@ public class Patient extends SugarRecord implements Serializable{
         int jour = _dateNaissance.getDay();
         return jour + "/" + mois + "/" + annee;
     }
+    public void setNom(String unNom){
+       _nom = unNom;
+    }
+    public void setPrenom(String unPrenom){
+        _prenom = unPrenom;
+    }
+    public void setChambre(String uneChambre){
+        _chambre = uneChambre;
+    }
+    public void setDateNaissance(Date uneDateNaissance){
+        _dateNaissance = uneDateNaissance;
+    }
     public String getMotif(){return _motif;}
 }
