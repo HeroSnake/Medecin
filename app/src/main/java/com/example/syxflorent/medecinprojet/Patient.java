@@ -1,6 +1,7 @@
 package com.example.syxflorent.medecinprojet;
 
 import com.orm.SugarRecord;
+import com.orm.dsl.Unique;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -10,6 +11,7 @@ import java.util.Date;
  */
 
 public class Patient extends SugarRecord implements Serializable{
+    @Unique
     private String _nom;
     private String _prenom;
     private Date _dateNaissance;
@@ -18,6 +20,7 @@ public class Patient extends SugarRecord implements Serializable{
 
     public Patient(){
     }
+
     public Patient (String unNom, String unPrenom, Date uneDateNaissance, String uneChambre, String unMotif){
         this._nom = unNom;
         this._prenom = unPrenom;
