@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".PatientsActivity" />
         <activity android:name=".CreeActivity" />
-        <activity android:name=".PatientDetailActivity"></activity>
+        <activity android:name=".PatientDetailActivity" />
+        <activity android:name=".ModifierActivity"></activity>
     </application>
 
 </manifest>
